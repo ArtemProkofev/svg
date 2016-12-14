@@ -5,24 +5,69 @@
 </head>
 <body>
 <svg height="900" width="1600">
+
 <rect id="r1"  height="900" width="1600" fill="#177245" />
-<rect id="r2"  x="300" y="200" height="450" width="800" fill="#ebebeb" />
+<rect id="r2"  height="450" width="1600" fill="#7fc7ff" />
+<rect id="r3"  x="300" y="200" height="450" width="800" fill="#ebebeb" />
 <polygon id="p1" points="300,200 700,50 1100,200" fill="#e0e0e0" />
 
-<rect id="r3"  x="400" y="560" height="70" width="30" fill="#00000" />
-<rect id="r4"  x="510" y="570" height="70" width="30" fill="#00000" />
-<rect id="r5"  x="620" y="550" height="70" width="30" fill="#00000" />
-<rect id="r6"  x="730" y="570" height="70" width="30" fill="#00000" />
-<rect id="r7"  x="840" y="560" height="70" width="30" fill="#00000" />
-<rect id="r8"  x="950" y="570" height="70" width="30" fill="#00000" />
+<rect id="s1"  x="400" y="510" height="120" width="60" fill="#00000" />
+<rect id="s2"  x="510" y="520" height="120" width="60" fill="#00000" />
+<rect id="s3"  x="620" y="500" height="120" width="60" fill="#00000" />
+<rect id="s4"  x="730" y="520" height="120" width="60" fill="#00000" />
+<rect id="s5"  x="840" y="510" height="120" width="60" fill="#00000" />
+<rect id="s6"  x="950" y="520" height="120" width="60" fill="#00000" />
 
-<rect id="e1"  x="405" y="535" height="20" width="20" fill="#0000ff" />
-<polygon id="e2" points="514,565 519,555 534,560 539,565" fill="#ffaa00" />
-<circle id="e3" r="15" cx="635" cy="530" fill="#aa0aaa" />
-<rect id="e4"  x="735" y="560" height="10" width="20" fill="#0cc00f" />
-<polygon id="e5" points="840,557 856,532 870,552 868,557" fill="#00ddaa" />
-<ellipse id="e6" rx="20" ry="10" cx="965" cy="555" fill="#fffaaf" />
+<rect id="e1"  x="415" y="475" height="30" width="30" fill="#0000ff" />
+<polygon id="e2" points="520,515 530,490 558,500 550,515" fill="#ffaa00" />
+<circle id="e3" r="20" cx="650" cy="475" fill="#aa0aaa" />
+<rect id="e4"  x="735" y="485" height="25" width="50" fill="#0cc00f" />
+<polygon id="e5" points="843,504 856,472 880,474 899,504" fill="#00ddaa" />
+<ellipse id="e6" rx="30" ry="15" cx="980" cy="500" fill="#fffaaf" />
 
+
+  <animate 
+           xlink:href="#e1"
+           attributeName="x"
+           values="415;550;370;415"
+           dur="2s"
+           repeatCount="5000"
+  />
+    <animate 
+           xlink:href="#e1"
+           attributeName="y"
+           values="475;400;340;475"
+           dur="2s"
+           repeatCount="5000"
+  />
+      <animate 
+           xlink:href="#e1"
+           attributeName="fill"
+           values="#0000ff;#177245;yellow;red;#0000ff"
+           dur="1s"
+           repeatCount="10000"
+  />
+  <animate 
+           xlink:href="#e1"
+           attributeName="x"
+           values="415"
+           begin="click"
+           fill="freeze"
+  />
+    <animate 
+           xlink:href="#e1"
+           attributeName="y"
+           values="475"
+           begin="click"
+           fill="freeze"
+  />
+    <animate 
+           xlink:href="#e1"
+           attributeName="fill"
+           values="#0000ff;#177245;yellow;red;#0000ff"
+           begin="click"
+           dur="2s"
+  />
 </svg>
 </body>
 </html>
