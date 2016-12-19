@@ -26,48 +26,61 @@
 <ellipse id="e6" rx="30" ry="15" cx="980" cy="500" fill="#fffaaf" />
 
 
+
+
   <animate 
            xlink:href="#e1"
            attributeName="x"
            values="415;550;370;415"
            dur="2s"
-           repeatCount="5000"
+           begin="click"
+           repeatCount="1"
   />
     <animate 
            xlink:href="#e1"
            attributeName="y"
            values="475;400;340;475"
            dur="2s"
-           repeatCount="5000"
-  />
-      <animate 
-           xlink:href="#e1"
-           attributeName="fill"
-           values="#0000ff;#177245;yellow;red;#0000ff"
-           dur="1s"
-           repeatCount="10000"
-  />
-  <animate 
-           xlink:href="#e1"
-           attributeName="x"
-           values="415"
            begin="click"
-           fill="freeze"
+           repeatCount="1"
   />
-    <animate 
-           xlink:href="#e1"
-           attributeName="y"
-           values="475"
-           begin="click"
-           fill="freeze"
-  />
+
     <animate 
            xlink:href="#e1"
            attributeName="fill"
-           values="#0000ff;#177245;yellow;red;#0000ff"
-           begin="click"
+           values="#0000ff;#0000ff;#0000ff;#177245;yellow;red;#0000ff;#0000ff;#0000ff"
            dur="2s"
+           repeatCount="1000000"
   />
+
+
+
+
+
+
+
+
+
+
+
+    <animate 
+           xlink:href="#e2"
+           attributeName="points"
+           values="520,515 530,490 558,500 550,515;520,415 530,390 558,400 550,415;520,315 530,290 558,300 550,315;520,415 530,390 558,400 550,415;520,515 530,490 558,500 550,515"
+           dur="1.5s"
+           begin="click"
+           repeatCount="1"
+  />
+
+    <animate 
+           xlink:href="#e2"
+           attributeName="fill"
+           values="#ffaa00;#ffaa00;#ffaa00;#ff0000;#ffaa00;#ff0000;#ffff0f;#ff0000;#ff0000;#ffaa00;#ffaa00;#ffaa00"
+           dur="1.5s"
+           begin="click"
+           repeatCount="1000000"
+  />
+
 </svg>
 </body>
 </html>
