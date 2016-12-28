@@ -3,12 +3,20 @@
 <head>
  <meta charset="utf-8">
  <title>SVG</title>
+ <script>   
+  var i=0;
+  function test() {
+    i=i+1;
+    scoreEl=document.getElementById('score');
+    scoreEl.innerHTML=String(i);
+  }
+ </script>
 </head>
 <body>
-<svg height="900" width="1600">
+<svg height="800" width="1600">
 
-<rect id="r1"  height="900" width="1600" fill="#177245" />
-<rect id="r2"  height="450" width="1600" fill="#7fc7ff" />
+<rect id="r1"  height="800" width="1600" fill="#177245" />
+<rect id="r2"  height="450" width="1600" fill="#7fc7ff" onclick="test();" />
 
 <rect id="r3"  x="300" y="200" height="450" width="800" fill="#ebebeb" />
 <polygon id="p1" points="300,200 700,50 1100,200" fill="#e0e0e0" />
@@ -304,6 +312,8 @@
 
 
 </svg>
+<p>Нажимай на фигуры, название музея и небо</p>
+<p>Дней прошло: <span id="score">0</span></p>
+
 </body>
 </html>
-
